@@ -1,27 +1,29 @@
 const Discord = require('discord.js');
+
 const client = new Discord.Client();
 
-client.on("message", message => {
+ 
 
-  if(message.content === "/news"){
+client.on('ready', () => {
 
-   // the robot answers pong!
-   message.channel.send("Last news: UntaFX is have a new post on Instagram @UntaFX!!");
-  
-};
+    console.log('I am ready!');
 
 });
 
-client.on("message", message => {
+ 
 
-  if(message.content === "/hi"){
+client.on('message', message => {
 
-   // the robot answers pong!
-   message.channel.send('Hello you!! im just a Bot :v');
-  
-};
+    if (message.content === 'ping') {
+
+       message.reply('pong');
+
+       }
 
 });
 
+ 
 
-client.login(process.env.BOT_TOKEN)
+// THIS  MUST  BE  THIS  WAY
+
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
