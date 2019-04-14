@@ -24,9 +24,9 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === '/newupload') {
+    if (message.content === '/about') {
 
-       message.reply('www.youtube.com');
+       message.reply('Bot made by UntaFX');
 
        }
 
