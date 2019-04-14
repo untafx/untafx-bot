@@ -14,9 +14,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'hi') {
+    if (message.content === '/news') {
 
-       message.reply('pong');
+       message.reply('Last News Update In 14/4/2019 : UntaFx has new post on @untafx Instagram!');
 
        }
 
@@ -26,4 +26,4 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 
-client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
+client.login(process.env.BOT_TOKEN);
