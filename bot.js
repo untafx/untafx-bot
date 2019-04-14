@@ -26,7 +26,7 @@ client.on('message', message => {
 
     if (message.content === '/newupload') {
 
-       message.reply(www.youtube.com);
+       message.reply('www.youtube.com');
 
        }
 
