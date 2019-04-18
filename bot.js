@@ -26,11 +26,11 @@ client.on('message', message => {
 
     if (message.content === '/about') {
 
-       embed=discord.Embed(title=test, description=hiii)
-       embed.add_field(name=undefined, value=undefined, inline=False)
-       await self.bot.say(embed=embed)
+       message.reply('Bot made by UntaFX');
 
        }
+
+});
 
 });
 
