@@ -14,9 +14,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'uWu') {
+    if (message.content === "uWu") {
 
-       message.reply('oWo');
+       message.reply("oWo");
 
        }
 
